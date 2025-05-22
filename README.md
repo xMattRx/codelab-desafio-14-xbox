@@ -1,54 +1,108 @@
-# React + TypeScript + Vite
+# 🎮 CodeLab - Desafio 14: Xbox Series X
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a solução para o **Desafio 14** do curso **CodeLab**, com o projeto **Xbox Series X**, uma landing page promocional destacando o console, principais jogos e recursos, com foco em responsividade, boas práticas de layout e fidelidade visual ao design fornecido.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Estrutura do projeto
+
+```
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── controle-xbox.png
+│   │   ├── farcry.png
+│   │   ├── fifa.png
+│   │   ├── forza.png
+│   │   ├── logo-xbox.svg
+│   │   ├── minecraft.png
+│   │   └── xbox.png
+│   ├── components/
+│   │   ├── FAQ.tsx
+│   │   └── Navigation.tsx
+│   ├── pages/
+│   │   └── Home.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── tailwind.config.ts
+├── tsconfig.json
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Como rodar o projeto localmente
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/codelab-desafio-14-xbox.git
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd codelab-desafio-14-xbox
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📸 Preview
+
+> *(Adicione aqui uma imagem de preview do projeto ou um GIF)*  
+> Exemplo:
+>
+> ![Preview do projeto](./src/assets/preview.png)
+
+---
+
+## 🎯 Objetivo do desafio
+
+Neste desafio, desenvolvemos uma landing page interativa com os seguintes objetivos:
+
+- Aplicar fidelidade ao layout do Figma  
+- Garantir layout totalmente responsivo (desktop, tablet, mobile)  
+- Utilizar boas práticas com Tailwind CSS  
+- Organizar o projeto com componentização e tipagem em TypeScript  
+
+---
+
+## 🧠 Aprendizados
+
+- Componentização de seções (FAQ, navegação, grid de imagens)  
+- Responsividade com breakpoints do Tailwind (`md`, `lg`)  
+- Utilização de animações suaves com Framer Motion  
+- Controle de estado local em componentes interativos  
+
+---
+
+## 🕹️ Demonstração
+
+> *(Opcional: adicione aqui o link do projeto publicado no Vercel ou outro serviço)*
+
+---
